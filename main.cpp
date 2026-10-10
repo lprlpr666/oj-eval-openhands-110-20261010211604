@@ -1,3 +1,5 @@
+// Solution for ACMOJ 1073
+
 #include <iostream>
 #include <cstdlib>
 #include <cmath>
@@ -82,7 +84,7 @@ public:
     }
     // date - date => absolute days difference
     long operator-(const Date& other) const {
-        long diff = std::abs(toOrdinal() - other.toOrdinal());
+        long diff = labs(toOrdinal() - other.toOrdinal());
         return diff;
     }
     bool operator<(const Date& other) const {
@@ -128,5 +130,6 @@ int main(){
         Date d1(1912,6,23);
         cout<<d0-d1<<'\n';
     }
+// End of solution
     return 0;
 }
