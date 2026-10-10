@@ -82,7 +82,7 @@ public:
     }
     // date - date => absolute days difference
     long operator-(const Date& other) const {
-        long diff = llabs(toOrdinal() - other.toOrdinal());
+        long diff = std::abs(toOrdinal() - other.toOrdinal());
         return diff;
     }
     bool operator<(const Date& other) const {
