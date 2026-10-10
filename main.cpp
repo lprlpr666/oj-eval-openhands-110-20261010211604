@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
 using namespace std;
 
 class Date {
